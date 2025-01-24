@@ -1,1 +1,1 @@
-# ds-all-codes
+# ds-all-codes-class-lecture
