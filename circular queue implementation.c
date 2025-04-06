@@ -26,7 +26,11 @@ void enqueue()
 void deque()
 {
     if(front == -1 && rear == -1) printf("Queue is empty!");
-    else if(front == rear) front = rear = -1;
+    else if(front == rear) 
+    {
+        printf("%d dequeued from the queue!\n", queue[front]); 
+        front = rear = -1;
+    }
     else
     {
         printf("%d dequeued from the queue!\n", queue[front]);
