@@ -25,34 +25,10 @@ void enqueue()
 void deque()
 {
     if(front == -1 && rear == -1) printf("Queue is empty!");
-    else if(front == rear) front = rear = -1;
-    else
+    else if(front == rear) 
     {
-        printf("%d dequeued from the queue!\n", queue[front]);
-        front++;
-    }
-}
-
-void display()
-{
-    if(front == -1 && rear == -1) printf("Queue is empty!");
-    else 
-    {
-        printf("Queue elements: ");
-        for(int i = front; i < rear+1; i++)
-        {
-            printf("%d ", queue[i]);
-        }
-        printf("\n\n");
-    }
-}
-
-void peek()
-{
-    if(front == -1 && rear == -1) printf("Queue is empty!");
-    else
-    {
-        printf("Front element is: %d\n", queue[front]);
+         front = rear = -1;
+         printf("%d dequeued from the queue!\n", queue[front]);
     }
 }
 int main ()
